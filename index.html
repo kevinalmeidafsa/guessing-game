@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600&f[]=plein@400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Jogo Adivinhação</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="box-wrapper">
+        <div class="screen1">
+          <h1>Jogo da Adivinhação</h1>
+          <p>
+            Estou pensando em um número entre 1 e 10. Tente adivinhar em quantas
+            tentativas você consegue acertar!
+          </p>
+          <form>
+            <input type="number" id="inputResult" maxlength="2" minlength="1" />
+            <button id="btnTry">Tentar</button>
+          </form>
+          <div class="error-message hide">
+            <span>Não é este número ques estou pensando. Tente novamente.</span>
+          </div>
+        </div>
+        <div class="screen2 hide">
+          <span>Parabéns!</span>
+          <h2></h2>
+          <button id="btnReset">Jogar Novamente</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

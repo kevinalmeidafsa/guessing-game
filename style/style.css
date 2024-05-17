@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsla(218, 78%, 18%, 1);
+  background-image: radial-gradient(
+      at 99% 90%,
+      hsla(240, 78%, 63%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 88% 19%, hsla(223, 73%, 25%, 1) 0px, transparent 50%),
+    radial-gradient(at 2% 66%, hsla(223, 73%, 25%, 1) 0px, transparent 50%),
+    radial-gradient(at 60% 55%, hsla(273, 100%, 69%, 1) 0px, transparent 50%),
+    radial-gradient(at 51% 0%, hsla(240, 78%, 63%, 1) 0px, transparent 50%),
+    radial-gradient(at 1% 29%, hsla(183, 76%, 62%, 1) 0px, transparent 50%),
+    radial-gradient(at 98% 100%, hsla(183, 75%, 62%, 1) 0px, transparent 50%),
+    radial-gradient(at 12% 98%, hsla(241, 78%, 63%, 1) 0px, transparent 50%);
+  font-size: 1rem;
+}
+.hide {
+  display: none;
+}
+body,
+button,
+input {
+  font-family: "Switzer", sans-serif;
+}
+
+button {
+  background-color: hsla(180, 70%, 60%, 1);
+  color: hsl(180, 10%, 5%);
+  font-weight: 600;
+  font-family: "Plein", sans-serif;
+  font-size: 1.125rem;
+  border-radius: 0 0.25rem 0.25rem 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  
+
+}
+button:hover {
+  -webkit-box-shadow: 0px 0px 25px 10px rgba(82, 224, 224, 0.35);
+  -moz-box-shadow: 0px 0px 25px 10px rgba(82, 224, 224, 0.35);
+  box-shadow: 0px 0px 25px 10px rgba(82, 224, 224, 0.35);
+}
+
+input {
+    background-color: hsla(0, 0%, 98%, 0.4);
+    font-size: 1.125rem;
+    width: 15rem;
+    border-radius: 0.25rem 0 0 0.25rem;
+  }
+
+main {
+  display: grid;
+  place-items: center;
+  min-height: 100svh;
+  width: 100%;
+}
+
+.box-wrapper {
+  text-align: center;
+  width: min(32rem, 90%);
+  padding: 3rem 3rem;
+  backdrop-filter: blur(4px) saturate(110%);
+  -webkit-backdrop-filter: blur(4px) saturate(110%);
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 0.75rem;
+  border: 1px solid rgba(209, 213, 219, 0.2);
+}
+
+/* Screen 1 */
+
+h1 {
+  font-family: "Plein", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: hsla(0, 0%, 98%, 1);
+  text-wrap: pretty;
+}
+h2 {
+  font-family: "Switzer", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  text-wrap: pretty;
+  margin-bottom: 0.5rem;
+  color: hsla(0, 0%, 98%, 1);
+  margin-bottom: 2rem;
+}
+span {
+  color: hsla(0, 0%, 98%, 1);
+  font-family: "Plein", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  line-height: 150%;
+  font-size: 1.125rem;
+  text-wrap: pretty;
+  color: hsla(0, 0%, 98%, 0.6);
+}
+
+form {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+input,
+button {
+  border: none;
+  padding: 0.75rem 1.5rem;
+}
+.screen1 .error-message span{
+  color: hsl(0, 0%, 90%);
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+
+}
+
+/* Screen 2 */
+
+
+.screen2 button {
+  background-color: hsla(180, 70%, 60%, 1);
+  color: hsl(180, 10%, 5%);
+  font-weight: 600;
+  font-family: "Plein", sans-serif;
+  font-size: 1.125rem;
+  border-radius: 0.25rem;
+}
